@@ -7,11 +7,11 @@ st.title("Handmade Cover Pages")
 st.write("Explore our collection of beautifully crafted handmade cover pages.")
 # Paths to your images
 image_paths = [
-    "/Users/gauravmahajan/Desktop/catalogue/cover pages/border design.jpg",  # Replace with actual image paths
-    "/Users/gauravmahajan/Desktop/catalogue/cover pages/cover2.webp",
-    "/Users/gauravmahajan/Desktop/catalogue/cover pages/coverpage.jpg",
-    "/Users/gauravmahajan/Desktop/catalogue/cover pages/designer.jpg",
-    "/Users/gauravmahajan/Desktop/catalogue/cover pages/designer.jpg",
+    "cover pages/border design.jpg",  # Replace with actual image paths
+    "cover pages/cover2.webp",
+    "cover pages/coverpage.jpg",
+    "cover pages/designer.jpg",
+    "cover pages/designer.jpg",
 ]
 
 # Number of columns
@@ -23,5 +23,5 @@ for i in range(0, len(image_paths), num_columns):
     for j in range(num_columns):
         if i + j < len(image_paths):  # Check if there is an image to display
             with cols[j]:
-                st.image(image_paths[i + j], caption=f"Printed Cover Image {i + j + 1}", use_column_width=True)
+                st.image(image_paths[i + j], caption=f"Printed Cover Image {i + j + 1}",use_container_width=True)
                 
